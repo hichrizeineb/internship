@@ -1,0 +1,22 @@
+base_directory : ./0_dB_fan/fan/id_00
+pickle_directory: ./pickle
+model_directory: ./model
+result_directory: ./result
+result_file: result_fan00.yaml
+
+feature:
+  n_mels: 64
+  frames : 5
+  n_fft: 1024
+  hop_length: 512
+  power: 2.0
+
+fit:
+  compile:
+    optimizer : adam             # You can change to "sgd" or "rmsprop"
+    loss : mean_squared_error    # Autoencoder reconstruction loss
+  epochs : 50                    # Increase for more training
+  batch_size : 512               # Reduce if you get out-of-memory error
+  shuffle : True
+  validation_split : 0.1
+  verbose : 1                    # 1=progress bar, 2=one line per epoch

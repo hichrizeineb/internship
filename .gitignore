@@ -1,0 +1,32 @@
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Virtual env
+venv/
+.env/
+
+# Big data & outputs (don’t upload)
+data/
+features/
+features_padded/
+model/
+*.npy
+*.npz
+*.h5
+*.keras
+*.wav
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+#dataset 
+visuals/
+images/
+
+#other 
+visualisations/
+pickle/
